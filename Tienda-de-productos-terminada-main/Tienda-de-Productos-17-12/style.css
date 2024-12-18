@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select: none;
+}
+
+body{
+    font-family:'Comfortaa', sans-serif;
+}
+
+.logo-patitas img{
+    margin: 3% 8% 3% 8%; 
+    width: 40%;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: #bd721d;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+nav{
+    flex: 1;
+    text-align: right;   
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: white;
+}
+
+.container{
+    background-color: #fef9ea;
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Productos */
+[data-product] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 5%;
+    background-image: url('https://img.freepik.com/vector-gratis/patron-lindo-caras-perro-huesos_1191-1204.jpg?t=st=1734449317~exp=1734452917~hmac=1d8b2eb0e0865fe5ae7c4c16cd84b1e87271bede82a3630d78d4e5b7cad099a8&w=740');
+    background-size: 35%;
+    background-repeat: repeat;
+    margin: 10%;
+}
+
+.card {
+    width: 95%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Estilo inicial para el botón */
+.delete-button {
+    padding: 8px 12px;
+    background-color: #ff4c4c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.delete-button:active {
+    background-color: #ff3333;
+    transform: scale(1.1);
+}
+
+/* Formulario */
+.form-container {
+    max-width: 40rem;
+    margin: 50px auto 13%;
+    padding: 3.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus {
+    border-color: #bd721d;
+    outline: none;
+}
+
+.mensajeError {
+    display: block;
+    color: #f44336;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 0 4rem;
+}
+
+.button-submit, .button-reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 48%;
+}
+
+.button-submit {
+    background-color: #8F9779;
+    color: white;
+    font-weight: bold;
+}
+
+.button-submit:hover {
+    background-color: #606C38;
+}
+
+.button-reset {
+    background-color: #DDA15E;
+    color: white;
+    font-weight: bold;
+}
+
+.button-reset:hover {
+    background-color: #bd721d;
+}
+
+/* Footer */
+.footer {
+    background: #606C38;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: space-around;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    border-left: 1px solid #8a8a8a;
+    border-right: 1px solid #8a8a8a;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    color: white;
+    flex-basis: 22%;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.app-logo img {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.footer-col-2 img {
+    width: 40%;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.footer hr {
+    background: none;
+    border: 0;
+    height: 1px;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: 40%;
+        overflow: hidden;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    [data-product] {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        flex-basis: 22%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+    .container-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        flex-basis: 100%;
+        padding: 1rem 0;
+        height: auto;
+        border-left: none;
+        border-right: none;
+    }
+    .footer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    ul li {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .app-logo img {
+        width: 100px;
+    }
+    .footer-col-2 img {
+        width: 60%;
+    }
+}
