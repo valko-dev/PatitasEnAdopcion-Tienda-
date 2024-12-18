@@ -36,4 +36,8 @@ La estructura básica del proyecto es una **tienda de productos**, cuya funciona
 3. Ejecutar el servidor con los siguientes comandos:
    ```bash
    npm install
-   json-server --watch db.json
+   npx json-server --watch db.json --port 3000
+
+
+
+
